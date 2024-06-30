@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>sign up</title>
+</head>
+<body>
+    
+    <form action="signupcode.php" method="post" novalidate>
+        <!-- since i set required for email input you must set novalidate for the form -->
+         <!-- novalidate is as preventDefault, ignore that the email field should be an eamil -->
+        <div>
+            <label for="name">user name</label>
+            <input type="text" name="username" id="name" >
+            
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required >
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" >
+        </div>
+        <div>
+            <label for="confirmPassword">confirm password</label>
+            <input type="password" name="confirm_password" id="confirmPassword" >
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </form>
+</body>
+</html>
